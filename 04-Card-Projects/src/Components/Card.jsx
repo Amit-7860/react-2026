@@ -6,19 +6,19 @@ function Card(props) {
         <div className="card">
 
           <div className="top">
-            <img src="https://hdqwalls.com/wallpapers/amazon-4k-logo-qhd.jpg" alt="img" />
+            <img src={props.image} alt="img" />
             <button>Save</button>
           </div>
 
           <div className="center">
-            <h3></h3>
+          <h3>{props.id}</h3>
           </div>
 
           <div className="bottom">
-            <h2>Amazon</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+            <h2>{props.company}</h2>
+            <p>{props.description}</p>
           
-            <button>Apply</button>
+            <button>Buy</button>
           </div>
 
         </div>

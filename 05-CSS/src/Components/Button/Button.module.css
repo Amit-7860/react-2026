@@ -1,0 +1,7 @@
+.btn {
+  padding: 2rem;
+  background-color: #f0f8ff;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

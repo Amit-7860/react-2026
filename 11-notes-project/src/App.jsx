@@ -34,7 +34,7 @@ const copyTasks = [...tasks]
         
         <button type='submit' className='bg-blue-500 text-white p-5 rounded-md'>Add Task</button>
       </form>
-     <div className='flex flex-wrap mt-6 h-full gap-3 overflow-auto items-start bg-green-400 p-5 rounded-md'>
+     <div className='flex flex-wrap mt-6 h-full gap-3 overflow-auto items-start bg'>
       {tasks.map((task, index) => (
         <div key={index} className='p-5 rounded-md w-52 h-40 mb-3 bg-cover bg-center' style={{backgroundImage: 'url("https://tse4.mm.bing.net/th/id/OIP.TBsyGGWx0FvbGkpyYt4BIAHaHa?w=512&h=512&rs=1&pid=ImgDetMain&o=7&rm=3")'}}>
           <div className=' p-4 rounded h-full'>

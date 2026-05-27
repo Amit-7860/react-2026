@@ -4,8 +4,13 @@ import './App.css'
 const App = () => {
 const [name, setName]   = React.useState("")
 const [email, setEmail] = React.useState("")
+const [password, setPassword] = React.useState("")
   const handleSubmit = (e) => {
     e.preventDefault()
+
+    setName("")
+    setEmail("")
+    setPassword("")
    
   }
   return (
@@ -13,15 +18,16 @@ const [email, setEmail] = React.useState("")
       <form action="" onSubmit={handleSubmit}>
         <input type="text" placeholder='Enter your name' onChange={(e)=>{
           setName(e.target.value)
-        }}/>
+        }} value={name}/>
         <h1>{name}</h1>
         <h1>{email}</h1>
         <input type="email" placeholder='Enter your email'
         onChange={(e)=>{
           setEmail(e.target.value)
         }}
+        value={email}
         />
-        <input type="password" placeholder='Enter your password'/>
+        <input type="password" placeholder='Enter your password' value={password} onChange={(e)=> setPassword(e.target.value)}/>
         <button type='submit'>Submit</button>
       </form>
     </div>

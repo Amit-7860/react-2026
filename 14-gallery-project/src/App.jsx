@@ -34,7 +34,7 @@ const App = () => {
           <div key={item.id}>
             <a href={item.download_url} target="_blank" rel="noopener noreferrer"> 
               <div className='w-64 h-64 overflow-hidden rounded-lg shadow-lg mb-5'>
-                <img src={item.download_url} alt={item.author} className='w-full h-full object-cover rounded-lg' />
+                <img  src={`https://picsum.photos/id/${item.id}/400/400`} alt={item.author} className='w-full h-full object-cover rounded-lg' loading="lazy" />
               </div>
             </a>
             <h1 className='text-center mt-1 text-2xl font-extrabold text-black'>{item.author}</h1>
